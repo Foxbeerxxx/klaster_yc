@@ -21,17 +21,16 @@ resource "yandex_mdb_mysql_cluster" "mysql" {
     minutes = 59
   }
 
-  maintenance_window { type = "ANYTIME" } # произвольное окно
+  maintenance_window { type = "ANYTIME" }
 
   security_group_ids = [yandex_vpc_security_group.mysql_sg.id]
 
   resources {
-    resource_preset_id = "b2.medium" # Broadwell, 50% CPU
+    resource_preset_id = "b2.medium"
     disk_type_id       = "network-ssd"
     disk_size          = 20
   }
 
-  # Размещение хостов кластера по зонам и private-подсетям
   host {
     zone             = "ru-central1-a"
     subnet_id        = yandex_vpc_subnet.private_a.id

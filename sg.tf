@@ -1,9 +1,8 @@
 resource "yandex_vpc_security_group" "mysql_sg" {
   name        = "mysql-sg"
-  network_id  = yandex_vpc_network.main.id
   description = "SG for Managed MySQL"
+  network_id  = yandex_vpc_network.main.id
 
-  # Разрешаем доступ к MySQL между private-подсетями (и из них)
   ingress {
     protocol    = "TCP"
     port        = 3306
@@ -14,7 +13,6 @@ resource "yandex_vpc_security_group" "mysql_sg" {
     ]
   }
 
-  # ICMP по желанию
   ingress {
     protocol       = "ICMP"
     description    = "Ping"
