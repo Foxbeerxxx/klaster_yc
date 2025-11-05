@@ -154,14 +154,14 @@ output "mysql_connection" {
 
 ```
 
-6. 
+6. `Ну и запуск`
 
 ```
-Поле для вставки кода...
-....
-....
-....
-....
+terraform fmt
+terraform validate
+terraform init -upgrade
+terraform apply
+
 ```
 
 `При необходимости прикрепитe сюда скриншоты
