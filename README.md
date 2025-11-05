@@ -163,10 +163,11 @@ terraform init -upgrade
 terraform apply
 
 ```
+![1](https://github.com/Foxbeerxxx/klaster_yc/blob/main/img/img1.png)
 
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
+![2](https://github.com/Foxbeerxxx/klaster_yc/blob/main/img/img2.png)
 
+![3](https://github.com/Foxbeerxxx/klaster_yc/blob/main/img/img3.png)
 
 ---
 
